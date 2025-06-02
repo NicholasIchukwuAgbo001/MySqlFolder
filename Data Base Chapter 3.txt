@@ -1,0 +1,85 @@
+Data Base Chapter 3
+-------------------
+
+3.1
+A database can be created from:
+- Existing data
+- Redesigning an existing system
+- Developing a new information system
+
+3.2
+Understanding the relational model and normalization helps us design efficient databases and fix data integrity problems.
+
+3.3
+A multivalued dependency occurs when one attribute is linked to multiple values.
+
+3.4
+Key database terms:
+1. Relation: A table with rows and columns, where each row represents a single entity.
+2. Functional dependency: When one attribute determines the value of another attribute.
+3. Determinant: The attribute that determines the value of another attribute.
+4. Candidate key: A unique identifier for each record in a table.
+5. Composite key: A key made up of two or more columns.
+6. Primary key: A unique identifier for each record in a table.
+7. Surrogate key: A generated key used as a primary key when no natural key exists.
+8. Foreign key: A primary key in one table that appears in another table to establish a relationship.
+9. Referential integrity constraint: Ensures that foreign key values match existing primary key values.
+10. Normal form: A measure of a table's design quality based on data integrity problems.
+
+3.5
+A relational table has the following characteristics:
+1. All values in a column are of the same type.
+2. Each row represents a single entity.
+3. Each cell contains a single value.
+4. Each column has a unique name.
+5. No two rows are identical.
+
+3.6
+A table is not relational if it has:
+1. Multiple values in a single cell.
+2. Rows with a specific order.
+
+3.7
+To reference a field in a table, we use the table name, dot operator, and field name.
+
+3.10
+A functional dependency can arise from a mathematical calculation or a real-world rule.
+
+3.11
+If knowing one attribute (part number) determines another attribute (part weight), then part number functionally determines part weight.
+
+3.13
+When two or more attributes (first name, last name) determine another attribute (phone number), it's a functional dependency.
+
+3.14
+When two or more attributes determine another attribute, it's a functional dependency.
+
+3.17
+In a database, "Buyer" determines the items purchased and the department, but "Department" only determines the list of buyers.
+
+3.20-3.26
+A candidate key is a unique identifier for each record in a table. A primary key is a special candidate key that uniquely identifies each record. A surrogate key is a generated key used as a primary key when no natural key exists.
+
+3.29
+A foreign key is a column or set of columns that references a primary key in another table. Its significance is to ensure data consistency.
+
+3.31
+Normal form refers to the design quality of a table based on data integrity problems.
+
+3.33
+A table with data integrity problems is susceptible to update anomalies.
+
+3.34
+A relational table must have:
+1. Unique rows.
+2. Columns with unique names.
+3. Rows with the same number of columns.
+
+3.36
+To achieve 2NF, a table must be in 1NF, and all non-key attributes must depend on the key attributes.
+
+3.37
+To achieve 3NF, a table must be in 2NF, and no non-key attribute can depend on another non-key attribute.
+
+3.38
+To achieve a higher normal form, every determinant must be a candidate key.
